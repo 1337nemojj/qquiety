@@ -8,6 +8,7 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 openai.api_key = config.get('API', 'ai_bot')
 
+
 intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
